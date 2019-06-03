@@ -1,0 +1,9 @@
+.DS_Store
+*.lock
+*.xcuserstate
+/XMVirtualReality.xcodeproj/xcuserdata/*
+/XMVirtualReality.xcworkspace/*
+build/*
+/Pods
+/DerivedData
+
