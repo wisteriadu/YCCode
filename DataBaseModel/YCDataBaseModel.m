@@ -231,6 +231,7 @@
             [map setObject:@"real" forKey:propertyName];
         }
     }
+    free(properties);
     return map.copy;
 }
 //将子类的属性和值转为字典
@@ -250,6 +251,7 @@
         //有可能为nil，需要判断一下。
         if(propertyValue) [map setObject:propertyValue forKey:propertyName];
     }
+    free(properties);
     return map.copy;
 }
 

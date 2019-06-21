@@ -30,6 +30,7 @@
         id propertyValue = [self resultSetValue:rs ofPropertyType:propertyType propertyName:propertyName];
         [model setValue:propertyValue forKey:propertyName];
     }
+    free(properties);
     return model;
 }
 
